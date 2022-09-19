@@ -1,4 +1,6 @@
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Accordion from "../components/accordion";
+
 
 const LeftNav = () => {
   const btnListNotifications = []
@@ -17,14 +19,14 @@ const LeftNav = () => {
   const btnListListen = []
   const btnListReport = []
   return (
-    <div className='bg-slate-900 flex flex-col place-content-start place-y-1'>
+    <div className='bg-slate-800 flex flex-col place-content-start place-y-1'>
       <div className='mt-[4em]'></div>
-      <Accordion accordionName={"Notifications"} btnList={btnListNotifications} />
-      <Accordion accordionName={"Summary"} btnList={btnListSummary} />
-      <Accordion accordionName={"Publish"} btnList={btnListPublish} />
-      <Accordion accordionName={"Engage"} btnList={btnListEngange} />
-      <Accordion accordionName={"Listen"} btnList={btnListListen} />
-      <Accordion accordionName={"Report"} btnList={btnListReport} />
+      <Accordion accordionName={"Notifications"} btnList={btnListNotifications} icon={solid('bell')} />
+      <Accordion accordionName={"Summary"} btnList={btnListSummary} icon={solid('align-justify')} />
+      <Accordion accordionName={"Publish"} btnList={btnListPublish} icon={solid('right-to-bracket')}/>
+      <Accordion accordionName={"Engage"} btnList={btnListEngange} icon={solid('hand-point-right')} />
+      <Accordion accordionName={"Listen"} btnList={btnListListen} icon={solid('headphones')} />
+      <Accordion accordionName={"Report"} btnList={btnListReport} icon={solid('square-poll-vertical')} />
     </div>
   );
 };
