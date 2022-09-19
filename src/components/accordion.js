@@ -36,7 +36,7 @@ const Accordion = ({ accordionName, btnList, icon }) => {
         </div>
       </div>
       {isActive ? null : (
-        <div className="flex flex-col">
+        <div className="flex flex-col ml-[0.5em]">
           {btnList.map((btn) => (
             <div key={btn.id}>
               <FontAwesomeIcon

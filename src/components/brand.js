@@ -16,7 +16,7 @@ const Brand = ({ brandName }) => {
         border-slate-900 
         hover:border-slate-800 
         hover:text-slate-100 
-        hover:bg-slate-400 
+        hover:bg-slate-700 
         m-[0.2em]
       "
     >
