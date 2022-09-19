@@ -17,7 +17,7 @@ const LeftNav = () => {
   const btnListListen = []
   const btnListReport = []
   return (
-    <div className='bg-slate-800 flex flex-col place-content-start place-y-1'>
+    <div className='bg-slate-900 flex flex-col place-content-start place-y-1'>
       <div className='mt-[4em]'></div>
       <Accordion accordionName={"Notifications"} btnList={btnListNotifications} />
       <Accordion accordionName={"Summary"} btnList={btnListSummary} />
