@@ -15,7 +15,24 @@ const LeftNav = () => {
     }
   ];
   const btnListSummary = []
-  const btnListEngange = []
+  const btnListEngange = [
+    {
+      id: 1,
+      name: 'Community',
+    },
+    {
+      id:2,
+      name: 'Suggestions'
+    },
+    {
+      id:3,
+      name: 'Complaints'
+    },
+    {
+      id: 4,
+      name: 'Find a coding partner'
+    }
+  ]
   const btnListListen = []
   const btnListReport = []
   return (
