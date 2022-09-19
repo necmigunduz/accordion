@@ -18,25 +18,27 @@ const Accordion = ({ accordionName, btnList, icon }) => {
         onClick={handleAccordion}
       >
         <FontAwesomeIcon icon={icon} className="my-auto text-slate-800" />
+        <div className="flex justify-between">
         <Button btnName={accordionName} className={titleClassName} />
         {btnList.length > 0 ? (
           isActive ? (
             <FontAwesomeIcon
               icon={solid("plus")}
-              className="text-slate-200 text-[8px] my-auto"
+              className="text-slate-200 text-[6px]"
             />
           ) : (
             <FontAwesomeIcon
               icon={solid("minus")}
-              className="text-slate-200 text-[8px] my-auto"
+              className="text-slate-200 text-[6px]"
             />
           )
         ) : null}
+        </div>
       </div>
       {isActive ? null : (
         <div className="flex flex-col">
           {btnList.map((btn) => (
-            <div>
+            <div key={btn.id}>
               <FontAwesomeIcon
                 icon={solid("location-dot")}
                 className="text-slate-200 text-[8px] mx-2 mb-[0.2em]"
@@ -44,7 +46,6 @@ const Accordion = ({ accordionName, btnList, icon }) => {
               <Button
                 btnName={btn.name}
                 className={bodyClassName}
-                key={btn.id}
               />
             </div>
           ))}
