@@ -1,11 +1,17 @@
 import Brands from "./brands"
 import LeftNav from "./leftNav"
+import Logo from "./logo"
 
 const Home = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col">
+      <div>
+        <Logo />
+      </div>
+      <div className="flex">
         <Brands />
-        <LeftNav /> 
+        <LeftNav />
+      </div> 
     </div>
   )
 }
