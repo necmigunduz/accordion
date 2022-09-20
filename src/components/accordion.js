@@ -39,8 +39,8 @@ const Accordion = ({ accordionName, btnList, icon, number0fItems }) => {
           {btnList.map((btn) => (
             <div key={btn.id}>
               <FontAwesomeIcon
-                icon={solid("location-dot")}
-                className="text-slate-200 text-[8px] mx-2 mb-[0.2em]"
+                icon={solid("circle")}
+                className="text-slate-400 text-[5px] mx-2 mb-[0.5em]"
               />
               <Button btnName={btn.name} className={bodyClassName} />
             </div>
