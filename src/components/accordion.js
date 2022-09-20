@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Button from "./button";
 
-const Accordion = ({ accordionName, btnList, icon }) => {
+const Accordion = ({ accordionName, btnList, icon, number0fItems }) => {
   const [isActive, setIsActive] = useState(true);
   const handleAccordion = () => {
     setIsActive(!isActive);
@@ -18,7 +18,7 @@ const Accordion = ({ accordionName, btnList, icon }) => {
       >
         <FontAwesomeIcon icon={icon} className="my-auto text-slate-800" />
         <div>
-          <Button btnName={accordionName} className={titleClassName} />
+          <Button btnName={accordionName} number0fItems={number0fItems} className={titleClassName} />
           {btnList.length > 0 ? (
             isActive ? (
               <FontAwesomeIcon

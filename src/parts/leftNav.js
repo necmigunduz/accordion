@@ -38,7 +38,7 @@ const LeftNav = () => {
   return (
     <div className='bg-slate-800 flex flex-col place-content-start place-y-1'>
       <div className='mt-[0.2em]'></div>
-      <Accordion accordionName={"Notifications"} btnList={btnListNotifications} icon={solid('bell')} />
+      <Accordion accordionName={"Notifications"} number0fItems={'29'} btnList={btnListNotifications} icon={solid('bell')} />
       <Accordion accordionName={"Summary"} btnList={btnListSummary} icon={solid('align-justify')} />
       <Accordion accordionName={"Publish"} btnList={btnListPublish} icon={solid('right-to-bracket')}/>
       <Accordion accordionName={"Engage"} btnList={btnListEngange} icon={solid('hand-point-right')} />
