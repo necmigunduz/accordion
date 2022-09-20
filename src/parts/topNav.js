@@ -35,8 +35,8 @@ const TopNav = () => {
       <img
         src="https://www.himalmag.com/wp-content/uploads/2019/07/sample-profile-picture.png"
         alt="profile-img"
-        width="30"
-        height="30"
+        width="50"
+        height="50"
         className="border rounded-3xl ml-[28em]"
       />
     </div>
