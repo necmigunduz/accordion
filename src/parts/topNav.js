@@ -3,32 +3,32 @@ import Bullet from "../components/bullet";
 
 const TopNav = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between mt-2">
       <div className="flex">
         <Bullet
           bulletName={"Published"}
           icon={solid("circle")}
-          color={'slate'}
+          textColor={'text-slate-400'}
         />
         <Bullet
           bulletName={"Scheduled"}
           icon={solid("circle")}
-          color={'green'}
+          textColor={'text-green-400'}
         />
         <Bullet
           bulletName={"Need Approval"}
           icon={solid("circle")}
-          color={'amber'}
+          textColor={'text-amber-400'}
         />
         <Bullet
           bulletName={"Errors"}
           icon={solid("circle")}
-          color={'red'}
+          textColor={'text-red-400'}
         />
         <Bullet
           bulletName={"Notes"}
           icon={solid("circle")}
-          color={'blue'}
+          textColor={'text-blue-400'}
         />
       </div>
 
