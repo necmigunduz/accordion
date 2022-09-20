@@ -16,7 +16,7 @@ const Brands = () => {
         }
     ]
   return (
-    <div className="bg-slate-900 w-[3.1em] h-screen py-1">
+    <div className="bg-slate-900 w-[3.1em] h-full py-1">
         {
             brands.map((brand) => <Brand brandName={brand.name} key={brand.id} />)
         }

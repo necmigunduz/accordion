@@ -12,12 +12,14 @@ const Brand = ({ brandName }) => {
         align-center 
         bg-slate-800 
         text-slate-400 
-        border 
         border-slate-900 
+        hover:border-slate-500
         hover:border-slate-800 
         hover:text-slate-100 
         hover:bg-slate-700 
         m-[0.2em]
+        border
+        rounded-3xl
       "
     >
       {brandName}

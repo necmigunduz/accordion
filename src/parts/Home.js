@@ -11,7 +11,7 @@ const Home = () => {
         <div>
           <Logo />
         </div>
-        <div className="flex">
+        <div className="flex h-full">
           <Brands />
           <LeftNav />
         </div>
