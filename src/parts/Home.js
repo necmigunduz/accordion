@@ -1,4 +1,5 @@
 import Brands from "./brands";
+import Cards from "./cards";
 import LeftNav from "./leftNav";
 import Logo from "./logo";
 import TopNav from "./topNav";
@@ -17,6 +18,7 @@ const Home = () => {
       </div>
       <div className="ml-8">
         <TopNav />
+        <Cards />
       </div>
     </div>
   );
