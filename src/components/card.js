@@ -1,7 +1,7 @@
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Card = ({date}) => {
+const Card = ({date, src, alt, onError}) => {
   const d = new Date(date)
   const day = d.getDay()
   const month = d.getMonth()
@@ -29,7 +29,7 @@ const Card = ({date}) => {
               <li><FontAwesomeIcon icon={solid('ellipsis')} className="text-slate-200 px-1 border rounded-full cursor-pointer py-[0.3em] ml-1 text-xs" /></li>
             </ul>
           </div>
-          <div></div>
+          <img src={src} alt={alt} onError={onError} />
           <div></div>
           <div></div>
         </div>
