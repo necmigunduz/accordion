@@ -10,7 +10,8 @@ This is a stylish webpage produced using React.JS.
 - ReactJS,
 - HTML5,
 - CSS3,
-- Tailwind CSS.
+- Tailwind CSS,
+- Fontawesome with Babel config.
 
 
 ## Getting Started
