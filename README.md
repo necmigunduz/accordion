@@ -4,7 +4,8 @@ This is a stylish webpage produced using React.JS.
 #### Page screenshot: 
 ![screenshot](https://github.com/necmigunduz/accordion/blob/master/screenshot.png)
 
-[Live Link](https://meek-marshmallow-6a3c12.netlify.app/)
+#### Live link
+[Click here](https://meek-marshmallow-6a3c12.netlify.app/) to see the project on Netlify.
 
 ## Built With
 
