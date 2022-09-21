@@ -1,3 +1,4 @@
+import { v4 as uuidv4, v4 } from 'uuid';
 import Card from "../components/card";
 import Data from "../data/data.json";
 import NoImg from "../assets/no-post-image.png";
@@ -22,6 +23,7 @@ const Cards = () => {
       <div className="m-8 grid grid-cols-3">
         {posts.map((post) => (
           <Card
+            key={v4()}
             date={post.published_at}
             src={post.entry.image[0]}
             alt={post.account.name}
