@@ -43,7 +43,7 @@ const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
             <li>
               <FontAwesomeIcon
                 icon={solid("ellipsis")}
-                className="text-slate-200 px-1 border rounded-full cursor-pointer py-[0.3em] ml-1 text-xs"
+                className="text-slate-200 px-1 border rounded-full cursor-pointer p-[0.18em] ml-1 text-xs"
               />
             </li>
           </ul>
