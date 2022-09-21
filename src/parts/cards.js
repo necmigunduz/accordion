@@ -10,7 +10,7 @@ const Cards = () => {
     e.preventDefault()
     e.target.src = NoImg
   }
-
+  console.log(posts[0].entry.message)
   return (
     <div className="m-8 grid grid-cols-3">
         {
@@ -20,6 +20,7 @@ const Cards = () => {
               src={post.entry.image[0]} 
               alt={post.account.name} 
               onError={handleError}
+              postMessage={post.entry.message}
             />
             )
         }
