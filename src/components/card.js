@@ -49,7 +49,7 @@ const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
           </ul>
         </div>
         <div className="mx-3 my-3">
-          <p className="text-[0.68em]">
+          <p className="text-[0.68em] text-slate-600">
             {message}
             <span className="text-blue-500">{link}</span>
           </p>
