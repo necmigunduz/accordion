@@ -22,7 +22,7 @@ const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
   return (
     <div className="flex border w-[18em] rounded-xl m-2">
       <div className={`w-[2.5em] ${type}`}>{socialLogo}</div>
-      <div className="rounded-2xl w-[30em]">
+      <div className="flex flex-col justify-between rounded-2xl w-[30em]">
         <div className="flex justify-between mx-4 mt-2">
           <div className="text-slate-600 text-sm">
             {day} {monthName} {year} - {hour}.{minute}
@@ -63,8 +63,7 @@ const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
             width={250}
           />
         </div>
-
-        <div className="flex justify-center">
+        <div className="flex justify-center my-[0.5em]">
           <ul className="flex text-slate-400 space-x-3 text-xs">
             <li>
               <FontAwesomeIcon icon={solid("thumbs-up")} /> <span>124</span>
