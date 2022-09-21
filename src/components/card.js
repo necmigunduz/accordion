@@ -1,8 +1,8 @@
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import toMonthName from "../data/toMonth";
 
-const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
+const Card = ({ date, src, alt, onError, postMessage, status, channel }) => {
   const d = new Date(date);
   const day = d.getDay();
   const month = d.getMonth();
@@ -19,9 +19,14 @@ const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
   if(status === 2) type='bg-green-400'
   if(status === 3) type='bg-slate-400'
   if(status === 4) type='bg-red-400'
+  let logo
+  if(channel === 'facebook') logo = <FontAwesomeIcon icon={brands('facebook')} />
+  if(channel === 'instagrambusiness') logo = <FontAwesomeIcon icon={brands('instagram')} />
+  if(channel === 'twitter') logo = <FontAwesomeIcon icon={brands('twitter')} />
+  
   return (
     <div className="flex border w-[18em] rounded-xl m-2">
-      <div className={`w-[2.5em] ${type}`}>{socialLogo}</div>
+      <div className={`w-[3em] h-full ${type} text-white items-center flex pl-1`}>{logo}</div>
       <div className="flex flex-col justify-between rounded-2xl w-[30em]">
         <div className="flex justify-between mx-4 mt-2">
           <div className="text-slate-600 text-sm">

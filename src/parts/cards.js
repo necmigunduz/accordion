@@ -30,6 +30,7 @@ const Cards = () => {
             onError={handleError}
             postMessage={post.entry.message}
             status={post.status}
+            channel={post.account.channel}
           />
         ))}
       </div>
