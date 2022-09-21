@@ -5,7 +5,7 @@ This is a stylish webpage produced using React.JS.
 ![screenshot](https://github.com/necmigunduz/accordion/blob/master/screenshot.png)
 
 #### Live Link
-[link](https://meek-marshmallow-6a3c12.netlify.app/)
+[Live Link](https://meek-marshmallow-6a3c12.netlify.app/)
 
 ## Built With
 
