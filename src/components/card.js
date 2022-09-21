@@ -1,17 +1,11 @@
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import toMonthName from "../data/toMonth";
 
 const Card = ({ date, src, alt, onError, postMessage, socialLogo, status }) => {
   const d = new Date(date);
   const day = d.getDay();
   const month = d.getMonth();
-  const toMonthName = (monthNumber) => {
-    const date = new Date();
-    date.setMonth(Number(monthNumber));
-    return date.toLocaleString("en-US", {
-      month: "long",
-    });
-  };
   const monthName = toMonthName(month);
   const year = d.getFullYear(date);
   const hour = d.getUTCHours();
