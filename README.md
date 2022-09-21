@@ -11,7 +11,8 @@ This is a stylish webpage produced using React.JS.
 - HTML5,
 - CSS3,
 - Tailwind CSS,
-- Fontawesome with Babel config.
+- Fontawesome with Babel config,
+- UUID.
 
 
 ## Getting Started
