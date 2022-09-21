@@ -26,7 +26,7 @@ const Card = ({ date, src, alt, onError, postMessage, status, channel }) => {
   
   return (
     <div className="flex border w-[18em] rounded-xl m-2">
-      <div className={`w-[3em] h-full ${type} text-white items-center flex pl-1 text-xl`}>{logo}</div>
+      <div className={`w-[3em] h-full ${type} text-white items-center flex px-2 text-xl`}>{logo}</div>
       <div className="flex flex-col justify-between rounded-2xl w-[30em]">
         <div className="flex justify-between mx-4 mt-2">
           <div className="text-slate-600 text-sm">
